@@ -71,11 +71,11 @@ _max_width_()
 
 st.image("logo.png", width=785)
 
-c1, c2, c3, c4 = st.beta_columns(4)
+c1, c2, c3, c4 = st.columns(4)
 
 # st.header("")
 
-# with st.beta_expander("📝 - To-Do's - Roadmap NOW ", expanded=True):
+# with st.expander("📝 - To-Do's - Roadmap NOW ", expanded=True):
 #    st.write(
 #        """
 # - [OTHER ISSUES]
@@ -119,7 +119,7 @@ c1, c2, c3, c4 = st.beta_columns(4)
 #
 #    st.header("")
 #
-# with st.beta_expander("📝 - Done", expanded=False):
+# with st.expander("📝 - Done", expanded=False):
 #    st.write(
 #        """
 # - [TESTED BUGS]
@@ -140,7 +140,7 @@ c1, c2, c3, c4 = st.beta_columns(4)
 #
 #    st.header("")
 #
-# with st.beta_expander("📝 - To-Do's - LATER", expanded=False):
+# with st.expander("📝 - To-Do's - LATER", expanded=False):
 #    st.write(
 #        """
 # - Add character count for each URL
@@ -269,10 +269,10 @@ st.header("")
 
 st.markdown("## **🔑 Settings **")  #########
 
-with st.beta_expander("↕️ Toggle Settings pane ", expanded=True):
+with st.expander("↕️ Toggle Settings pane ", expanded=True):
 
     st.markdown("### **① Upload your Google Cloud NLP credentials **")  #########
-    c3, c4, c5 = st.beta_columns([1.5, 4, 1.5])
+    c3, c4, c5 = st.columns([1.5, 4, 1.5])
 
     with c4:
         try:
@@ -297,7 +297,7 @@ with st.beta_expander("↕️ Toggle Settings pane ", expanded=True):
     # with c4:
     #    st.markdown("####")
     #    #st.text("")
-    #    c = st.beta_container()
+    #    c = st.container()
     #    if uploaded_file:
     #        st.success("✅ Your Google NLP credentials have been uploaded!")
 
@@ -326,13 +326,13 @@ with st.beta_expander("↕️ Toggle Settings pane ", expanded=True):
 
     # listOne
 
-    # with st.beta_expander("📝 - languageDropdown ", expanded=False):
+    # with st.expander("📝 - languageDropdown ", expanded=False):
 
     st.markdown("### **② Choose language and location settings **")
 
-    c3, c4, c5 = st.beta_columns([3, 0.1, 3])
+    c3, c4, c5 = st.columns([3, 0.1, 3])
 
-    # c10, c20 = st.beta_columns(2)
+    # c10, c20 = st.columns(2)
 
     with c3:
 
@@ -358,7 +358,7 @@ with st.beta_expander("↕️ Toggle Settings pane ", expanded=True):
     MAX_LINES = 5
 
     # st.markdown("### **① Upload your Google Cloud NLP credentials **")  #########
-    # c3, c4, c5 = st.beta_columns([1, 3, 1])
+    # c3, c4, c5 = st.columns([1, 3, 1])
 
     text = st.text_area("One URL per line (5 max)", height=120, key=1)
     lines = text.split("\n")  # A list of lines
@@ -867,7 +867,7 @@ column_names01_05 = [
 
 # region [CSV_Button] urlONEnotTWO ####################################################################################
 
-with st.beta_expander("⯈ Top 15 entities - In #01 NOT #02", expanded=False):
+with st.expander("⯈ Top 15 entities - In #01 NOT #02", expanded=False):
 
     st.markdown("")
 
@@ -910,7 +910,7 @@ with st.beta_expander("⯈ Top 15 entities - In #01 NOT #02", expanded=False):
 
 if len(linesList) > 2:
 
-    with st.beta_expander("⯈ Top 15 entities - In #01 NOT #03", expanded=False):
+    with st.expander("⯈ Top 15 entities - In #01 NOT #03", expanded=False):
 
         st.markdown("")
 
@@ -960,7 +960,7 @@ else:
 
 if len(linesList) > 3:
 
-    with st.beta_expander("⯈ Top 15 entities - In #01 NOT #04", expanded=False):
+    with st.expander("⯈ Top 15 entities - In #01 NOT #04", expanded=False):
 
         st.markdown("")
 
@@ -1009,7 +1009,7 @@ else:
 
 if len(linesList) > 4:
 
-    with st.beta_expander("⯈ Top 15 entities - In #01 NOT #05", expanded=False):
+    with st.expander("⯈ Top 15 entities - In #01 NOT #05", expanded=False):
 
         st.markdown("")
 
@@ -1064,7 +1064,7 @@ st.markdown("### ** ⭕ Top 15 section (entites in other URLs but not in #01) **
 
 st.markdown("")
 
-with st.beta_expander("⯈ Top 15 entities - In #02 NOT #01", expanded=False):
+with st.expander("⯈ Top 15 entities - In #02 NOT #01", expanded=False):
 
     st.markdown("")
 
@@ -1108,7 +1108,7 @@ with st.beta_expander("⯈ Top 15 entities - In #02 NOT #01", expanded=False):
 
 if len(linesList) > 2:
 
-    with st.beta_expander("⯈ Top 15 entities - In #03 NOT #01", expanded=False):
+    with st.expander("⯈ Top 15 entities - In #03 NOT #01", expanded=False):
 
         st.markdown("")
 
@@ -1161,7 +1161,7 @@ else:
 
 if len(linesList) > 3:
 
-    with st.beta_expander("⯈ Top 15 entities - In #04 NOT #01", expanded=False):
+    with st.expander("⯈ Top 15 entities - In #04 NOT #01", expanded=False):
 
         st.markdown("")
 
@@ -1208,7 +1208,7 @@ else:
 
 if len(linesList) > 4:
 
-    with st.beta_expander("⯈ Top 15 entities - In #05 NOT #01", expanded=False):
+    with st.expander("⯈ Top 15 entities - In #05 NOT #01", expanded=False):
 
         st.markdown("")
 
@@ -1269,7 +1269,7 @@ st.markdown("### 🟡 **All results**")
 
 dfColumnsList = df_merged.columns.tolist()
 
-c10, c20 = st.beta_columns(2)
+c10, c20 = st.columns(2)
 
 col_one_list = df_merged["Entity Type"].tolist()
 col_one_list = list(dict.fromkeys(col_one_list))
