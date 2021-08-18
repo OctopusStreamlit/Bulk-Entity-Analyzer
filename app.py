@@ -360,7 +360,7 @@ with st.expander("↕️ Toggle Settings pane ", expanded=True):
     # st.markdown("### **① Upload your Google Cloud NLP credentials **")  #########
     # c3, c4, c5 = st.columns([1, 3, 1])
 
-    text = st.text_area("One URL per line (5 max)", height=120, key=1)
+    text = st.text_area("One URL per line (5 max)", height=120, key="1")
     lines = text.split("\n")  # A list of lines
     if len(lines) > MAX_LINES:
         st.warning(f"🐙 Heads-up! Only the first {MAX_LINES} URLs will be processed!")
