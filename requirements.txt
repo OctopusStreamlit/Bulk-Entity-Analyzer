@@ -8,6 +8,6 @@ numpy==1.19.0
 pandas==1.0.5
 requests==2.24.0
 seaborn==0.10.1
-streamlit
+streamlit == 0.81
 urllib3==1.25.9
 grpcio==1.30.0
